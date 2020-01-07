@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+     
+     // console.log("1.App Start"); //1
+
+
+     // setTimeout(function(){
+     //      console.log("2.After 1 Sec") //2
+     // },1000);
+     
+     
+     // setTimeout(function(){
+     //      console.log("3.After 0 Sec") //3
+     // },0);
+     
+     // console.log("4.App End"); //4
+
+
+
+     function execute(value1,value2,cb){
+          setTimeout(function(){
+               var result = value1 + value2;
+               cb(result)
+          },1000)
+     }
+
+     execute(2,3,function(data){
+          var average = data / 3;
+          console.log(average)
+     });
+
+     console.log("Hello App")
+     console.log("Hello App")
+     console.log("Hello App")
+     console.log("Hello App")
+    
+     
+     
+     </script>
+</body>
+</html>
